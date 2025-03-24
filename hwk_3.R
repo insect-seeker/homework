@@ -1,0 +1,17 @@
+x <- c(1,2,3)
+y <- c(4,5,6)
+z <- c(7,8,9)
+A <- cbind(x,y,z)
+rownames(A) <- c("a","b","c")
+print(A)
+
+B <- rbind(x,y,z)
+rownames(B) <- c("a","b","c")
+print(B)
+
+install.packages(ade4)
+library(ade4)
+data(doubs)
+typeof(doubs)
+str(doubs)
+save(doubs,file = "doubs_data.RData")
